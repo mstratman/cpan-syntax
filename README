@@ -3,8 +3,23 @@ Git repository: https://github.com/mstratman/cpan-syntax
 cpan-syntax is a collection of files and snippets to add syntax
 highlighting to search.cpan.org
 
-Dependencies:
+DEPENDENCIES
+------------
+(all except jQuery itself have been included in this repository):
 * jQuery: http://jquery.com/
-* mstratman's fork of jquery.styleswitch.mlklc.js:
-  https://github.com/mstratman/FRAMEWORK/blob/master/jquery.plugins/jquery.styleswitch.mlklc.js
+* SHJS: http://shjs.sourceforge.net/
+* jquery.styleswitch.mlklc.js:
+  https://github.com/molokoloco/FRAMEWORK/tree/master/jquery.plugins
 * jquery.cookie.js: https://github.com/carhartl/jquery-cookie
+
+INSTALLATION
+------------
+* Upload the js/* and css/* files.
+* Include the contents of html/select.html somewhere on the page.
+  e.g. in the footer
+* Include the contents of html/head.html in the header. Change paths as necessary
+* Add class="sh_perl" to any markup that represents code.
+
+EXAMPLE
+-------
+Look at example/Multiplex.html for an example.  Grep for "ADD THIS" to see the added html.

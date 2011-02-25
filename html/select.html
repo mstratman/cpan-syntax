@@ -1,0 +1,59 @@
+<!-- This should probably be put in the <div class="footer"></div> -->
+<script type="text/javascript">
+    $(document).ready(function(){
+        var startingStyle = $.cookie('css') ? $.cookie('css') : 'css/sh_cpan.min.css';
+        $.fn.styleSwitch(startingStyle);
+        $("#styleswitch").val(startingStyle);
+        sh_highlightDocument();
+        $("#styleswitch").bind(($.browser.msie ? "click" : "change"), function() {
+            $.fn.styleSwitch($(this).val());
+        });
+    });
+</script>
+<div class="styleswitch">
+    syntax highlighting:
+    <select id="styleswitch">
+        <option value="css/sh_none.min.css">no syntax highlighting</option>
+        <option value="css/sh_acid.min.css">acid</option>
+        <option value="css/sh_berries-dark.min.css">berries-dark</option>
+        <option value="css/sh_berries-light.min.css">berries-light</option>
+        <option value="css/sh_bipolar.min.css">bipolar</option>
+        <option value="css/sh_blacknblue.min.css">blacknblue</option>
+        <option value="css/sh_bright.min.css">bright</option>
+        <option value="css/sh_contrast.min.css">contrast</option>
+        <option value="css/sh_cpan.min.css">cpan</option>
+        <option value="css/sh_darkblue.min.css">darkblue</option>
+        <option value="css/sh_darkness.min.css">darkness</option>
+        <option value="css/sh_desert.min.css">desert</option>
+        <option value="css/sh_dull.min.css">dull</option>
+        <option value="css/sh_easter.min.css">easter</option>
+        <option value="css/sh_emacs.min.css">emacs</option>
+        <option value="css/sh_golden.min.css">golden</option>
+        <option value="css/sh_greenlcd.min.css">greenlcd</option>
+        <option value="css/sh_ide-anjuta.min.css">ide-anjuta</option>
+        <option value="css/sh_ide-codewarrior.min.css">ide-codewarrior</option>
+        <option value="css/sh_ide-devcpp.min.css">ide-devcpp</option>
+        <option value="css/sh_ide-eclipse.min.css">ide-eclipse</option>
+        <option value="css/sh_ide-kdev.min.css">ide-kdev</option>
+        <option value="css/sh_ide-msvcpp.min.css">ide-msvcpp</option>
+        <option value="css/sh_kwrite.min.css">kwrite</option>
+        <option value="css/sh_matlab.min.css">matlab</option>
+        <option value="css/sh_navy.min.css">navy</option>
+        <option value="css/sh_nedit.min.css">nedit</option>
+        <option value="css/sh_neon.min.css">neon</option>
+        <option value="css/sh_night.min.css">night</option>
+        <option value="css/sh_pablo.min.css">pablo</option>
+        <option value="css/sh_peachpuff.min.css">peachpuff</option>
+        <option value="css/sh_print.min.css">print</option>
+        <option value="css/sh_rand01.min.css">rand01</option>
+        <option value="css/sh_style.min.css">style</option>
+        <option value="css/sh_the.min.css">the</option>
+        <option value="css/sh_typical.min.css">typical</option>
+        <option value="css/sh_vampire.min.css">vampire</option>
+        <option value="css/sh_vim-dark.min.css">vim-dark</option>
+        <option value="css/sh_vim.min.css">vim</option>
+        <option value="css/sh_whatis.min.css">whatis</option>
+        <option value="css/sh_whitengrey.min.css">whitengrey</option>
+        <option value="css/sh_zellner.min.css">zellner</option>
+    </select>
+</div>
