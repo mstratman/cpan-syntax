@@ -1,0 +1,10 @@
+Git repository: https://github.com/mstratman/cpan-syntax
+
+cpan-syntax is a collection of files and snippets to add syntax
+highlighting to search.cpan.org
+
+Dependencies:
+* jQuery: http://jquery.com/
+* mstratman's fork of jquery.styleswitch.mlklc.js:
+  https://github.com/mstratman/FRAMEWORK/blob/master/jquery.plugins/jquery.styleswitch.mlklc.js
+* jquery.cookie.js: https://github.com/carhartl/jquery-cookie
