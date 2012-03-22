@@ -23,3 +23,18 @@ INSTALLATION
 EXAMPLE
 -------
 Look at example/Multiplex.html for an example.  Grep for "ADD THIS" to see the added html.
+
+LICENSE
+-------
+Please see the included or linked software distributions listed above for 
+their corresponding licenses.
+
+css/sh_cpan.css is a modified version of a theme from SHJS, and subject
+to the licensing of SHJS.
+
+html/*.html were assembled for use in search.cpan.org and are released into the
+public domain.
+
+example/* simply applies this collection of files to an example module
+from the CPAN, and styled with the markup and CSS from search.cpan.org, and
+everything in this directory is copyright its respective owners.
